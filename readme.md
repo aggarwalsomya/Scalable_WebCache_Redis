@@ -21,6 +21,10 @@ Above algorithm generates consistent view for given key across all nodes.
 Also
 the number of keys moved while adding/deleting nodes is minimized.
 
+Multiple Redis Clients could be deployed on different Tomcat containers. 
+As every Client is equipped with HRW hashing algorithm, there would be 
+no SPOF (Single Point Of Failure) in the System.
+
 ### Web cache :
 
 The search results obtained through Google Search Engine are stored in Redis
